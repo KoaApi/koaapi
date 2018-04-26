@@ -1,0 +1,32 @@
+{
+  "name": "koa-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "g": "node src/cli/modelCli",
+    "start": "node src/app",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2": "./node_modules/.bin/pm2 start src/app --name koaApi"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.14.0",
+    "mysql": "^2.15.0",
+    "sequelize-auto": "^0.4.29"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security",
+    "jsonwebtoken": "^8.1.1",
+    "koa": "^2.4.1",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.3.0",
+    "koa-send": "^4.1.3",
+    "log4js": "^2.5.3",
+    "mysql2": "^1.5.1",
+    "redis": "^2.8.0",
+    "sequelize": "^4.32.1"
+  }
+}

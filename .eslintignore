@@ -1,0 +1,3 @@
+web/dist/*.js
+config
+node_modules
