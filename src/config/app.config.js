@@ -6,7 +6,8 @@ let config = {
     port: 888,
     apiPath: '/api',
     authPath: '/api/auth',
-    staticPath: '/static' 
+    staticPath: '/static',
+    sendLogEmail: false
   },
   apiCode: {
     errCode: 'QM4004',
