@@ -5,10 +5,10 @@ let LoginSev = require('../models/index')
 module.exports = {
   'GET /api/hello': async (ctx, next) => {
     let token = await jwt.signJwt('terry')
-    Redis.set("koaApi", "欢迎使用KoaApi~~")
-    Redis.hmset("test", "stu", JSON.stringify({name: 'terry'}))
-    console.log(await Redis.getHm('test'))
-    console.log(await Redis.getStr('koaApi'))
+    // Redis.set("koaApi", "欢迎使用KoaApi~~")
+    // Redis.hmset("test", "stu", JSON.stringify({name: 'terry'}))
+    // console.log(await Redis.getHm('test'))
+    // console.log(await Redis.getStr('koaApi'))
     try {
       console.log(await jwt.verifyJwt(token))
     } catch (e) {

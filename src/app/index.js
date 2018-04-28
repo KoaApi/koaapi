@@ -3,8 +3,8 @@ const bodyParse = require('koa-bodyparser')
 
 global.C = require('../config')
 global.T = require('../lib/util')
-global.L = require('../lib/log')
-global.Redis = require('./redis')
+// global.L = require('../lib/log')
+// global.Redis = require('./redis')
 global.Db = require('./mysql')
 const app = new Koa()
 
@@ -19,7 +19,7 @@ app.use(require('../middleware/jwt'))
  * 配置log中间件
  * 作用: 记录日志
  */
-app.use(require('../middleware/log'))
+// app.use(require('../middleware/log'))
 
 /**
  * 配置bodyParse中间件
