@@ -97,15 +97,15 @@ module.exports = {
     },
   categories: {
     warn: {
-      appenders: ['warnLogger', 'warnEms'],
+      appenders: app.sendLogEmail ? ['warnLogger', 'warnEms'] : ['warnLogger'],
       level: 'warn'
     },
     error: {
-      appenders: ['errorLogger', 'errEms'],
+      appenders: app.sendLogEmail ? ['errorLogger', 'errEms'] : ['errorLogger'],
       level: 'error'
     },
     default: {
-      appenders: ['successLogger', 'resEms'],
+      appenders: app.sendLogEmail ? ['successLogger', 'resEms'] : ['errorLogger'],
       level: 'trace'
     }
   } 
