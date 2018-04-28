@@ -17,5 +17,6 @@ let auto = new SequelizeAuto(config.database, config.username, config.password, 
 
 auto.run(function (err) {
 	if (err) throw err
-	console.log('创建schema成功,请检查~~~')
+	if (JSON.stringify(auto.tables) !== '{}') console.log('创建schema成功,请检查~~~')
+	else console.log('创建schema失败,请检查相关配置...')
 })
