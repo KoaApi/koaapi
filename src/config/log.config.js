@@ -1,5 +1,6 @@
 let path = require('path')
 let { formatDate } = require('../lib/util')
+let { app } = require('./app.config')
 
 let config = {
   basePath: path.resolve(__dirname, '../../logs'),
